@@ -97,7 +97,8 @@ details[open] .when-closed { display: none; }
 :lang(ja) .role { font-size: 17px; }
 html:lang(ja) body { font-family: Arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "BIZ UDPGothic", Meiryo, "Noto Sans JP", sans-serif; }
 html:lang(zh-CN) body { font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", sans-serif; }
-:lang(ja) h3, :lang(ja) .entry-subtitle, :lang(ja) .degree, :lang(ja) .credential-name { word-break: auto-phrase; }
+:lang(ja) h3, :lang(ja) .entry-subtitle, :lang(ja) .degree, :lang(ja) .credential-name,
+:lang(ja) .credential-provider, :lang(ja) .language-list dd { word-break: auto-phrase; }
 @media (max-width: 1000px) {
   .toolbar { padding-left: 24px; padding-right: 24px; }
   .paper { margin: 0 20px 32px; padding: 36px 36px 24px; }
@@ -154,7 +155,7 @@ html:lang(zh-CN) body { font-family: Arial, "PingFang SC", "Hiragino Sans GB", "
   .entry-header { flex-direction: row; align-items: baseline; }
   .entry-date { white-space: nowrap; }
   .skill-list > div { grid-template-columns: 145px minmax(0, 1fr); }
-  .language-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .language-list { grid-template-columns: max-content minmax(0, 1fr) minmax(0, 1fr); }
   .language-list > div { display: block; }
   .publication-heading h3 { font-size: 10pt; }
   .publication { margin-bottom: 16px; break-inside: avoid; }
@@ -163,7 +164,7 @@ html:lang(zh-CN) body { font-family: Arial, "PingFang SC", "Hiragino Sans GB", "
   .additional-content { padding-top: 12px; }
   summary { display: none; }
   .resume-section { break-inside: auto; }
-  .footer { flex-direction: row; margin-top: 12px; padding-top: 6px; }
+  .footer { display: none; }
   .resume-section { margin-top: 18px; }
   .entry { margin-bottom: 12px; }
   .entry li { margin: 2px 0; line-height: 1.5; }

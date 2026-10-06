@@ -19,25 +19,6 @@ export const profileLinks = [
 
 export const publications = [
   {
-    "title": "Recover-then-measure: Hybrid segmentation and adaptive binarization for quantitative assessment of parking lot pavement marking degradation from UAV imagery",
-    "authors": [
-      "Zhentao Liu",
-      "Jiaming Liu",
-      "Zhengtao Xie",
-      "Kai Xue",
-      "Shan Gu",
-      "Ji Dang"
-    ],
-    "venue": "Measurement (Elsevier), 123332",
-    "year": "2026",
-    "doi": "10.1016/j.measurement.2026.123332",
-    "url": "https://doi.org/10.1016/j.measurement.2026.123332",
-    "first": false,
-    "topic": "Quantifies per-region paint loss on parking-lot markings from UAV orthophotos: semantic segmentation recovers the original marking, including worn segments, and adaptive binarization isolates the remaining paint.",
-    "onlineYear": "",
-    "featured": true
-  },
-  {
     "title": "Estimation of stripping ratio of road lane markings by in-vehicle smartphone camera and deep learning-based segmentation",
     "authors": [
       "Jiaming Liu",
@@ -83,6 +64,25 @@ export const publications = [
     "first": true,
     "topic": "Bridge corrosion segmentation, studying transfer learning, annotation quality, hyperparameters, and false-positive reduction.",
     "onlineYear": ""
+  },
+  {
+    "title": "Recover-then-measure: Hybrid segmentation and adaptive binarization for quantitative assessment of parking lot pavement marking degradation from UAV imagery",
+    "authors": [
+      "Zhentao Liu",
+      "Jiaming Liu",
+      "Zhengtao Xie",
+      "Kai Xue",
+      "Shan Gu",
+      "Ji Dang"
+    ],
+    "venue": "Measurement (Elsevier), 123332",
+    "year": "2026",
+    "doi": "10.1016/j.measurement.2026.123332",
+    "url": "https://doi.org/10.1016/j.measurement.2026.123332",
+    "first": false,
+    "topic": "Quantifies per-region paint loss on parking-lot markings from UAV orthophotos: semantic segmentation recovers the original marking, including worn segments, and adaptive binarization isolates the remaining paint.",
+    "onlineYear": "",
+    "featured": true
   },
   {
     "title": "AI Data-Centric 3D Machine Vision for Structural Element and Damage Identification",
@@ -258,7 +258,7 @@ export const locales = {
         "paperUrl": ""
       }
     ],
-    "projectIntro": "Built alone outside working hours with Claude Code and Codex. I own design, code review, and verification, and built the agent harness workflow—CLAUDE.md / AGENTS.md rules, Skills, MCP, design docs, and tests—so agents implement changes autonomously.",
+    "projectIntro": "Web services I build and run on my own. I built a harness workflow around Claude Code and Codex, and handle design, code review, and verification myself.",
     "projects": [
       {
         "name": "Ramune Photo",
@@ -282,7 +282,7 @@ export const locales = {
         "tech": "Python data pipelines · MapLibre GL · PMTiles · ECharts · Next.js"
       }
     ],
-    "publicationIntro": "9 publications: 1 in an international journal (Measurement, Elsevier), 5 in peer-reviewed journals of the Japan Society of Civil Engineers (JSCE), and 3 international conference papers. Research in UAV bridge inspection, road-marking assessment, segmentation, and 3D reconstruction.",
+    "publicationIntro": "Research in UAV bridge inspection, road-marking assessment, segmentation, and 3D reconstruction.",
     "firstAuthor": "",
     "morePublications": "5 more co-authored papers",
     "lessPublications": "Hide co-authored papers",
@@ -293,7 +293,7 @@ export const locales = {
         "degree": "Master of Engineering · Civil and Environmental Engineering",
         "school": "Saitama University, Graduate School of Science and Engineering",
         "date": "Apr 2022 — Mar 2024",
-        "description": "GPA 3.71 / 4.0. International program taught mainly in English. Research in UAV photogrammetry, 3D point clouds, and AI-based infrastructure inspection. Completed the graduate school’s data-scientist training program."
+        "description": "GPA 3.71 / 4.0. International program taught mainly in English. Research in UAV photogrammetry, 3D point clouds, and AI-based infrastructure inspection."
       },
       {
         "degree": "Bachelor of Engineering · Civil and Environmental Engineering",
@@ -326,12 +326,12 @@ export const locales = {
     ],
     "credentials": [
       [
-        "Fundamental IT Engineer Examination (FE), passed",
+        "Fundamental IT Engineer Exam (FE), passed",
         "IPA, Japan",
         "Jun 2022"
       ],
       [
-        "Information Security Management Examination (SG), passed",
+        "Information Security Management Exam (SG), passed",
         "IPA, Japan",
         "Dec 2023"
       ],
@@ -348,6 +348,21 @@ export const locales = {
     ],
     "moreCredentials": "Additional qualifications",
     "extraCredentials": [
+      [
+        "Data Scientist Training Program (completed)",
+        "Saitama University Graduate School",
+        "Mar 2024"
+      ],
+      [
+        "History of Cultural Exchange between China and Japan (course)",
+        "Coursera",
+        "Feb 2024"
+      ],
+      [
+        "Networks and Crowds (course)",
+        "Coursera",
+        "Dec 2023"
+      ],
       [
         "IT Passport Examination, passed",
         "IPA, Japan",
@@ -390,25 +405,6 @@ export const locales = {
       }
     ],
     "publications": [
-      {
-        "title": "Recover-then-measure: Hybrid segmentation and adaptive binarization for quantitative assessment of parking lot pavement marking degradation from UAV imagery",
-        "authors": [
-          "Zhentao Liu",
-          "Jiaming Liu",
-          "Zhengtao Xie",
-          "Kai Xue",
-          "Shan Gu",
-          "Ji Dang"
-        ],
-        "venue": "Measurement (Elsevier), 123332",
-        "year": "2026",
-        "doi": "10.1016/j.measurement.2026.123332",
-        "url": "https://doi.org/10.1016/j.measurement.2026.123332",
-        "first": false,
-        "topic": "Quantifies per-region paint loss on parking-lot markings from UAV orthophotos: semantic segmentation recovers the original marking, including worn segments, and adaptive binarization isolates the remaining paint.",
-        "onlineYear": "",
-        "featured": true
-      },
       {
         "title": "Estimation of stripping ratio of road lane markings by in-vehicle smartphone camera and deep learning-based segmentation",
         "authors": [
@@ -455,6 +451,25 @@ export const locales = {
         "first": true,
         "topic": "Bridge corrosion segmentation, studying transfer learning, annotation quality, hyperparameters, and false-positive reduction.",
         "onlineYear": ""
+      },
+      {
+        "title": "Recover-then-measure: Hybrid segmentation and adaptive binarization for quantitative assessment of parking lot pavement marking degradation from UAV imagery",
+        "authors": [
+          "Zhentao Liu",
+          "Jiaming Liu",
+          "Zhengtao Xie",
+          "Kai Xue",
+          "Shan Gu",
+          "Ji Dang"
+        ],
+        "venue": "Measurement (Elsevier), 123332",
+        "year": "2026",
+        "doi": "10.1016/j.measurement.2026.123332",
+        "url": "https://doi.org/10.1016/j.measurement.2026.123332",
+        "first": false,
+        "topic": "Quantifies per-region paint loss on parking-lot markings from UAV orthophotos: semantic segmentation recovers the original marking, including worn segments, and adaptive binarization isolates the remaining paint.",
+        "onlineYear": "",
+        "featured": true
       },
       {
         "title": "AI Data-Centric 3D Machine Vision for Structural Element and Damage Identification",
@@ -646,7 +661,7 @@ export const locales = {
         "paperUrl": ""
       }
     ],
-    "projectIntro": "業務時間外に、Claude Code／Codexを活用して一人で設計・開発・運用しているWebサービス。設計・レビュー・検証は自身で担当し、作業ルール（CLAUDE.md・AGENTS.md）、Skills、MCP連携、設計ドキュメント、自動テストを組み合わせて、エージェントが自律的に実装できるハーネスワークフローを構築。",
+    "projectIntro": "一人で開発・運用しているWebサービス。Claude Code／Codexを活用したハーネスワークフローを構築し、設計・レビュー・検証は自身で担当。",
     "projects": [
       {
         "name": "Ramune AI 証明写真",
@@ -670,7 +685,7 @@ export const locales = {
         "tech": "Pythonデータ収集パイプライン／MapLibre GL・PMTiles／ECharts／Next.js"
       }
     ],
-    "publicationIntro": "論文9件：国際学術誌1件（Measurement、Elsevier）、土木学会の査読付き論文誌5件、国際会議論文3件。UAV橋梁点検、区画線の劣化評価、セグメンテーション、三次元再構成に関する研究。",
+    "publicationIntro": "UAV橋梁点検、区画線の劣化評価、セグメンテーション、三次元再構成に関する研究。",
     "firstAuthor": "",
     "morePublications": "その他の共著論文5件",
     "lessPublications": "共著論文を閉じる",
@@ -681,7 +696,7 @@ export const locales = {
         "degree": "環境社会基盤専攻 環境社会基盤国際プログラム（博士前期課程）修了・修士（工学）",
         "school": "埼玉大学大学院 理工学研究科",
         "date": "2022年4月〜2024年3月",
-        "description": "GPA 3.71 / 4.0。講義・研究指導を主に英語で行う国際プログラム。UAV写真測量、三次元点群、AIインフラ点検を研究。「データサイエンティストとしての素養を備えた理工系人材育成プログラム」修了。"
+        "description": "GPA 3.71 / 4.0。講義・研究指導を主に英語で行う国際プログラム。UAV写真測量、三次元点群、AIインフラ点検を研究。"
       },
       {
         "degree": "環境社会デザイン学科 卒業・学士（工学）",
@@ -737,6 +752,21 @@ export const locales = {
     "moreCredentials": "その他の資格",
     "extraCredentials": [
       [
+        "データサイエンティストとしての素養を備えた理工系人材育成プログラム 修了",
+        "埼玉大学大学院理工学研究科",
+        "2024年3月"
+      ],
+      [
+        "History of Cultural Exchange between China and Japan 修了",
+        "Coursera",
+        "2024年2月"
+      ],
+      [
+        "Networks and Crowds 修了",
+        "Coursera",
+        "2023年12月"
+      ],
+      [
         "ITパスポート試験 合格",
         "IPA（情報処理推進機構）",
         "2021年8月"
@@ -778,25 +808,6 @@ export const locales = {
       }
     ],
     "publications": [
-      {
-        "title": "Recover-then-measure: Hybrid segmentation and adaptive binarization for quantitative assessment of parking lot pavement marking degradation from UAV imagery",
-        "authors": [
-          "Zhentao Liu",
-          "Jiaming Liu",
-          "Zhengtao Xie",
-          "Kai Xue",
-          "Shan Gu",
-          "Ji Dang"
-        ],
-        "venue": "Measurement（Elsevier）, 123332",
-        "year": "2026",
-        "doi": "10.1016/j.measurement.2026.123332",
-        "url": "https://doi.org/10.1016/j.measurement.2026.123332",
-        "first": false,
-        "topic": "UAVオルソ画像から、駐車場区画線の剥離率を領域ごとに算出。セマンティックセグメンテーションで摩耗部分を含む元の区画線領域を復元し、適応的二値化で残存塗料を抽出。",
-        "onlineYear": "",
-        "featured": true
-      },
       {
         "title": "Estimation of stripping ratio of road lane markings by in-vehicle smartphone camera and deep learning-based segmentation",
         "authors": [
@@ -843,6 +854,25 @@ export const locales = {
         "first": true,
         "topic": "橋梁腐食のセグメンテーション。転移学習、アノテーション品質、ハイパーパラメータ、誤検出低減を検討。",
         "onlineYear": ""
+      },
+      {
+        "title": "Recover-then-measure: Hybrid segmentation and adaptive binarization for quantitative assessment of parking lot pavement marking degradation from UAV imagery",
+        "authors": [
+          "Zhentao Liu",
+          "Jiaming Liu",
+          "Zhengtao Xie",
+          "Kai Xue",
+          "Shan Gu",
+          "Ji Dang"
+        ],
+        "venue": "Measurement（Elsevier）, 123332",
+        "year": "2026",
+        "doi": "10.1016/j.measurement.2026.123332",
+        "url": "https://doi.org/10.1016/j.measurement.2026.123332",
+        "first": false,
+        "topic": "UAVオルソ画像から、駐車場区画線の剥離率を領域ごとに算出。セマンティックセグメンテーションで摩耗部分を含む元の区画線領域を復元し、適応的二値化で残存塗料を抽出。",
+        "onlineYear": "",
+        "featured": true
       },
       {
         "title": "AI Data-Centric 3D Machine Vision for Structural Element and Damage Identification",
@@ -1034,7 +1064,7 @@ export const locales = {
         "paperUrl": ""
       }
     ],
-    "projectIntro": "在业余时间借助 Claude Code、Codex 独立设计、开发并运营的 Web 服务。设计、代码审查与验证由我负责；结合 CLAUDE.md / AGENTS.md 规则、Skills、MCP、设计文档与自动化测试搭建 Harness 工作流，让智能体能够自主实现修改。",
+    "projectIntro": "独立开发并运营的 Web 服务。我搭建了基于 Claude Code、Codex 的 Harness 工作流，设计、代码审查与验证由我自己负责。",
     "projects": [
       {
         "name": "Ramune Photo",
@@ -1058,7 +1088,7 @@ export const locales = {
         "tech": "Python 数据采集管线 · MapLibre GL · PMTiles · ECharts · Next.js"
       }
     ],
-    "publicationIntro": "共 9 篇论文：国际期刊论文 1 篇（Measurement，Elsevier）、土木学会同行评审期刊论文 5 篇、国际会议论文 3 篇。研究涉及 UAV 桥梁巡检、道路标线评价、语义分割与三维重建。",
+    "publicationIntro": "研究涉及 UAV 桥梁巡检、道路标线评价、语义分割与三维重建。",
     "firstAuthor": "",
     "morePublications": "其他合作论文（5 篇）",
     "lessPublications": "收起合作论文",
@@ -1069,7 +1099,7 @@ export const locales = {
         "degree": "工学硕士 · 土木与环境工程（环境社会基盘国际项目）",
         "school": "埼玉大学 大学院理工学研究科",
         "date": "2022.04 — 2024.03",
-        "description": "GPA 3.71 / 4.0。以英语授课为主的国际项目。研究 UAV 摄影测量、三维点云与 AI 基础设施巡检。修完研究科的数据科学家培养特别教育项目。"
+        "description": "GPA 3.71 / 4.0。以英语授课为主的国际项目。研究 UAV 摄影测量、三维点云与 AI 基础设施巡检。"
       },
       {
         "degree": "工学学士 · 土木与环境工程（环境社会设计学科）",
@@ -1125,6 +1155,21 @@ export const locales = {
     "moreCredentials": "其他资格",
     "extraCredentials": [
       [
+        "数据科学家素养理工科人才培养项目（结业）",
+        "埼玉大学 大学院理工学研究科 特别教育项目",
+        "2024.03"
+      ],
+      [
+        "中日文化交流史（课程）",
+        "Coursera",
+        "2024.02"
+      ],
+      [
+        "人群与网络 Networks and Crowds（课程）",
+        "Coursera",
+        "2023.12"
+      ],
+      [
         "IT Passport 考试 合格",
         "日本 IPA",
         "2021.08"
@@ -1166,25 +1211,6 @@ export const locales = {
       }
     ],
     "publications": [
-      {
-        "title": "Recover-then-measure: Hybrid segmentation and adaptive binarization for quantitative assessment of parking lot pavement marking degradation from UAV imagery",
-        "authors": [
-          "Zhentao Liu",
-          "Jiaming Liu",
-          "Zhengtao Xie",
-          "Kai Xue",
-          "Shan Gu",
-          "Ji Dang"
-        ],
-        "venue": "Measurement（Elsevier）, 123332",
-        "year": "2026",
-        "doi": "10.1016/j.measurement.2026.123332",
-        "url": "https://doi.org/10.1016/j.measurement.2026.123332",
-        "first": false,
-        "topic": "从 UAV 正射影像按区域量化停车场标线的剥离率：先用语义分割恢复包括磨损部分在内的原始标线区域，再用自适应二值化提取残留涂料。",
-        "onlineYear": "",
-        "featured": true
-      },
       {
         "title": "Estimation of stripping ratio of road lane markings by in-vehicle smartphone camera and deep learning-based segmentation",
         "authors": [
@@ -1231,6 +1257,25 @@ export const locales = {
         "first": true,
         "topic": "桥梁腐蚀语义分割，研究迁移学习、标注质量、超参数与误检抑制。",
         "onlineYear": ""
+      },
+      {
+        "title": "Recover-then-measure: Hybrid segmentation and adaptive binarization for quantitative assessment of parking lot pavement marking degradation from UAV imagery",
+        "authors": [
+          "Zhentao Liu",
+          "Jiaming Liu",
+          "Zhengtao Xie",
+          "Kai Xue",
+          "Shan Gu",
+          "Ji Dang"
+        ],
+        "venue": "Measurement（Elsevier）, 123332",
+        "year": "2026",
+        "doi": "10.1016/j.measurement.2026.123332",
+        "url": "https://doi.org/10.1016/j.measurement.2026.123332",
+        "first": false,
+        "topic": "从 UAV 正射影像按区域量化停车场标线的剥离率：先用语义分割恢复包括磨损部分在内的原始标线区域，再用自适应二值化提取残留涂料。",
+        "onlineYear": "",
+        "featured": true
       },
       {
         "title": "AI Data-Centric 3D Machine Vision for Structural Element and Damage Identification",

@@ -1,76 +1,76 @@
 ---
 name: resume-publish
-description: 把已保存的简历草稿生成网站文件，并发布到 GitHub Pages（jaminryu.github.io）。只在用户本次明确说“发布”“同步网页”“push 到 GitHub”时使用；保存草稿不算发布指示。Sites 预览由 Codex 发布。
+description: Export the saved résumé draft and publish it to GitHub Pages (jaminryu.github.io). Use only when the owner explicitly asks in the current conversation to publish, sync the website, or push to GitHub; saving the draft is not a publish request. The Sites preview is published by Codex.
 ---
 
-# 发布到 GitHub Pages
+# Publish to GitHub Pages
 
-## 0. 前提
+## 0. Preconditions
 
-- 用户在当前对话明确要求发布。上一次的同意不能延续到这一次。
-- 第一次公开新的个人信息（联系方式、在留资格等）时，先向用户确认。
-- 用户只提 GitHub 时只发布 GitHub。`site/` 的 Sites 预览由 Codex 的 Sites 工作流发布，这里只生成文件。
+- The owner explicitly asked to publish in the current conversation. Earlier approval does not carry over.
+- Confirm with the owner before personal information (contact details, residency status, and so on) goes public for the first time.
+- If the owner mentions only GitHub, publish only GitHub. The Sites preview in `site/` is published by Codex with the Sites workflow; here it is only generated.
 
-## 1. 同步与校验
+## 1. Sync and validate
 
-在工作区根目录运行：
+Run from the workspace root:
 
 ```sh
 node --test local-editor/tests/editor.test.mjs
-git -C github-pages fetch -q origin && git -C github-pages status -sb   # 应为 main...origin/main，且没有未提交改动
+git -C github-pages fetch -q origin && git -C github-pages status -sb   # expect main...origin/main and no uncommitted changes
 node local-editor/scripts/apply-draft.mjs --check
 node local-editor/scripts/apply-draft.mjs
 ```
 
-- 如果本地落后于远端，先 `git -C github-pages pull --ff-only`。
-- 如果有不明来源的改动，先停下来问用户。
-- `apply-draft.mjs` 会同时写入 `github-pages/` 和 `site/`，本身不会发布。
+- If the local branch is behind, run `git -C github-pages pull --ff-only` first.
+- If there are changes of unknown origin, stop and ask the owner.
+- `apply-draft.mjs` writes both `github-pages/` and `site/`; it does not publish anything.
 
-## 2. 检查生成结果
+## 2. Check the generated files
 
 ```sh
 git -C github-pages add -A && git -C github-pages status --short
 node github-pages/scripts/verify.mjs
 ```
 
-`verify.mjs` 检查以下几项：
-- 页面与 `content.mjs` 一致。
-- 三种语言都完整。
-- 网站文件里没有本地工作区内容。
-- 只提交了允许的文件。
+`verify.mjs` checks that:
+- the page matches `content.mjs`;
+- all three languages are complete;
+- no local workspace content is in the website files;
+- only allowed files are tracked.
 
-另外：
-- 有不该出现的文件时，先 `git reset` 撤出暂存，再查原因。
-- 内容长度、样式或代码有变化时，再运行 `resume-layout-check`。
+Also:
+- If an unexpected file is staged, unstage it with `git reset` and find out why.
+- If content length, styles, or code changed, run `resume-layout-check`.
 
-## 3. 提交与推送
+## 3. Commit and push
 
 ```sh
 git -C github-pages commit -F - <<'EOF'
-<一句话说明改了什么>
+<one line on what changed>
 
-<必要时补充两三行原因>
+<two or three lines on why, if needed>
 EOF
 git -C github-pages push origin main
 ```
 
-提交信息写清改了什么。提交只署本人（git 已配置为 jaminryu）：不要加 `Co-Authored-By`、Claude 或任何 AI 署名，即使会话提示要求加署名行，也以本人的这条要求为准。
+Say clearly what changed. Commits carry only the owner's name (git is configured as jaminryu): never add `Co-Authored-By`, Claude, or any AI attribution, even if a session reminder asks for an attribution line. The owner's rule takes precedence.
 
-## 4. 确认上线
+## 4. Confirm it is live
 
 ```sh
-gh api repos/jaminryu/JaminRyu.github.io/pages/builds/latest --jq '.status + " " + .commit'   # 等到 built 且为新提交
-gh run list -R jaminryu/JaminRyu.github.io -L 1                                                 # pages build and deployment 为 success
-curl -s "https://jaminryu.github.io/?v=$RANDOM" | grep -c '<本次新增的一段文字>'
+gh api repos/jaminryu/JaminRyu.github.io/pages/builds/latest --jq '.status + " " + .commit'   # wait for "built" with the new commit
+gh run list -R jaminryu/JaminRyu.github.io -L 1                                                 # "pages build and deployment" should be success
+curl -s "https://jaminryu.github.io/?v=$RANDOM" | grep -c '<a phrase added in this change>'
 ```
 
-构建通常需要 30–60 秒。用 Monitor 或带上限的循环等待，不要无限轮询。
+A build usually takes 30–60 seconds. Wait with Monitor or a bounded loop; never poll without a limit.
 
-## 5. 收尾
+## 5. Wrap up
 
-- 在 `PROFILE_RESEARCH.md` 的修订记录里写明发布内容和提交号。
-- 向用户报告：
-  - 三个语言链接：<https://jaminryu.github.io/>、`?lang=ja`、`?lang=zh`。
-  - 检查结果。
-  - `site/` 已生成但未发布。
-  - 看不到变化时请强制刷新。
+- Add the published changes and the commit hash to the change log in `PROFILE_RESEARCH.md`.
+- Report to the owner:
+  - the three language links: <https://jaminryu.github.io/>, `?lang=ja`, `?lang=zh`;
+  - the check results;
+  - that `site/` was generated but not published;
+  - to hard-refresh if the change does not show.

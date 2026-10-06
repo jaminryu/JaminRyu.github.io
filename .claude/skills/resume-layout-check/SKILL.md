@@ -1,37 +1,37 @@
 ---
 name: resume-layout-check
-description: 检查简历页面的版式：三种语言的桌面整页截图、A4 打印页数，以及 375px 手机宽度下是否横向溢出。改了内容长度、样式或渲染代码之后，以及发布之前使用。
+description: Check the résumé layout - full-page desktop screenshots and A4 print page counts in all three languages, and horizontal overflow at 375px phone width. Use after changing content length, styles, or rendering code, and before publishing.
 ---
 
-# 版式与打印检查
+# Layout and print check
 
-## 1. 截图与 A4 页数
+## 1. Screenshots and A4 page counts
 
-在工作区根目录运行。默认检查编辑器预览，也可以传入本地静态服务的地址：
+Run from the workspace root. It checks the editor preview by default; you can also pass a local static server:
 
 ```sh
 github-pages/.claude/skills/resume-layout-check/scripts/layout-check.sh
-github-pages/.claude/skills/resume-layout-check/scripts/layout-check.sh http://127.0.0.1:4173/ <输出目录>
+github-pages/.claude/skills/resume-layout-check/scripts/layout-check.sh http://127.0.0.1:4173/ <output-dir>
 ```
 
-脚本输出每种语言的 A4 页数，并在输出目录保存 `desktop-<lang>.png` 和 `print-<lang>.pdf`。
+The script prints the A4 page count per language and saves `desktop-<lang>.png` and `print-<lang>.pdf` in the output directory.
 
-- **目标**：每种语言不超过 3 页，最后一页不能只剩一个标题或页脚。
-- **超出时**：先精简文字。仍然超出，再调整 `local-editor/public/preview-styles.css` 的 `@media print`，例如间距、字号或资格栏改两列。改完重启编辑器再检查。
-- **查看截图**：整页截图很长，先裁成几段再看：
+- **Target**: three pages or fewer per language, and the last page must not hold only a heading or the footer.
+- **If it is over**: tighten the text first. If that is not enough, adjust `@media print` in `local-editor/public/preview-styles.css` (spacing, font size, two-column credentials), restart the editor, and check again.
+- **Reading screenshots**: full-page screenshots are tall, so crop them first:
   ```sh
   python3 -c "from PIL import Image; im=Image.open('desktop-ja.png'); [im.crop((120,a,980,a+1200)).save(f'ja-{i}.png') for i,a in enumerate(range(0,im.height,1150))]"
-  pdftoppm -r 50 -png print-ja.pdf page    # 打印版逐页转 PNG
+  pdftoppm -r 50 -png print-ja.pdf page    # one PNG per printed page
   ```
-- **查看要点**：
-  - 日文换行是否自然。
-  - 日期是否右对齐。
-  - 技术栈灰字是否可读。
-  - 折叠的论文和资格在打印时是否展开。
+- **What to look at**:
+  - natural Japanese line breaks;
+  - right-aligned dates;
+  - readable grey tech-stack lines;
+  - folded papers and credentials expanded in print.
 
-## 2. 手机宽度
+## 2. Phone width
 
-无头 Chrome 的窗口宽度有下限，手机截图会被截断，不准确。用浏览器面板模拟 375px 宽度，再执行：
+Headless Chrome has a minimum window width, so its phone screenshots are clipped and unreliable. Emulate a 375px viewport in the browser pane and run:
 
 ```js
 const out = {};
@@ -45,9 +45,9 @@ for (const l of ['ja', 'en', 'zh']) {
 out
 ```
 
-三种语言的 `scrollWidth` 都应等于 `viewport`，`overflow` 为空。检查完把视口恢复为桌面尺寸。
+`scrollWidth` should equal `viewport` and `overflow` should be empty in all three languages. Reset the viewport to desktop afterwards.
 
-## 3. 其他
+## 3. Other checks
 
-- `getComputedStyle(document.body).fontFamily` 在日文页面应以日文字体栈为准，例如 Hiragino Sans、BIZ UDPGothic、Meiryo。
-- 内容变化后，`og:title` 和 `og:description` 跟随英文的 `title` 和 `description`。
+- On the Japanese page, `getComputedStyle(document.body).fontFamily` should resolve to the Japanese font stack (Hiragino Sans, BIZ UDPGothic, Meiryo).
+- `og:title` and `og:description` follow the English `title` and `description`.

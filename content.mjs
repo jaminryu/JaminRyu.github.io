@@ -19,6 +19,25 @@ export const profileLinks = [
 
 export const publications = [
   {
+    "title": "Recover-then-measure: Hybrid segmentation and adaptive binarization for quantitative assessment of parking lot pavement marking degradation from UAV imagery",
+    "authors": [
+      "Zhentao Liu",
+      "Jiaming Liu",
+      "Zhengtao Xie",
+      "Kai Xue",
+      "Shan Gu",
+      "Ji Dang"
+    ],
+    "venue": "Measurement (Elsevier), 123332",
+    "year": "2026",
+    "doi": "10.1016/j.measurement.2026.123332",
+    "url": "https://doi.org/10.1016/j.measurement.2026.123332",
+    "first": false,
+    "topic": "Quantifies per-region paint loss on parking-lot markings from UAV orthophotos: semantic segmentation recovers the original marking, including worn segments, and adaptive binarization isolates the remaining paint.",
+    "onlineYear": "",
+    "featured": true
+  },
+  {
     "title": "Estimation of stripping ratio of road lane markings by in-vehicle smartphone camera and deep learning-based segmentation",
     "authors": [
       "Jiaming Liu",
@@ -31,7 +50,7 @@ export const publications = [
     "doi": "10.11532/jsceiiai.5.2_106",
     "url": "https://doi.org/10.11532/jsceiiai.5.2_106",
     "first": true,
-    "topic": "Smartphone video and two-stage segmentation for estimating the stripping ratio of lane markings. Lane IoU 88.43%; R² 0.9827 against manual assessment.",
+    "topic": "Smartphone video and two-stage AI segmentation for estimating the stripping ratio of lane markings. Lane IoU 88.43%; R² 0.9827 against manual assessment.",
     "onlineYear": ""
   },
   {
@@ -157,7 +176,7 @@ export const locales = {
     "name": "Jiaming Liu",
     "htmlLang": "en",
     "title": "Jiaming Liu — Résumé",
-    "description": "Jiaming Liu — AI Engineer in Tokyo. Computer-vision models, internal tools, and independent web products, built with AI-native development and harness engineering.",
+    "description": "Jiaming Liu — AI Engineer. Computer-vision models, internal tools, and independent web products, built with AI-native development and harness engineering.",
     "résumé": "RÉSUMÉ",
     "skip": "Skip to content",
     "languageLabel": "Language",
@@ -166,7 +185,7 @@ export const locales = {
     "navLabel": "Résumé sections",
     "eyebrow": "Computer vision · AI engineering",
     "role": "AI Engineer",
-    "location": "Tokyo, Japan",
+    "location": "",
     "intro": "I build AI models and the web services around them, from design through operation, and practice harness engineering: setting up environments in which coding agents work autonomously.",
     "sections": {
       "experience": "Experience",
@@ -181,12 +200,11 @@ export const locales = {
         "organization": "SmartCity Research Institute",
         "url": "https://www.smc-tech.com/en/",
         "date": "Apr 2024 — Present",
-        "role": "AI Engineer · Tokyo",
+        "role": "AI Engineer (full-time)",
         "bullets": [
-          "Key result: developed algorithms that detect lane markings in in-vehicle smartphone video and quantify their stripping ratio (wear). Used in a City of Nagoya demonstration project, whose official report states that wear was assessed with over 90% accuracy.",
-          "Published the method as first author in a peer-reviewed journal (lane IoU 88.43%; R² 0.9827 against manual assessment).",
+          "Key result: developed algorithms that detect lane markings in in-vehicle smartphone video and quantify their stripping ratio. Used in a City of Nagoya demonstration project, whose official report states that wear was assessed with over 90% accuracy.",
           "Filed a related patent application as principal inventor (pending).",
-          "Developed and maintained dozens of AI models, mainly in computer vision, including inference post-processing and long-term operation.",
+          "Handled big-data processing, data annotation, development, inference post-processing, and maintenance for dozens of AI models, mainly in computer vision.",
           "Built many internal tools, including a data annotation tool and a project schedule and HR management tool.",
           "Collaborated with a multinational team in English, Japanese, and Chinese in a small, fast-paced startup."
         ],
@@ -215,9 +233,9 @@ export const locales = {
         "organization": "Yachiyo Engineering",
         "url": "",
         "date": "Aug 2022",
-        "role": "Summer Intern · Two weeks",
+        "role": "Summer Intern",
         "bullets": [
-          "Trained AI models on AWS with Amazon S3 and presented the results."
+          "Trained AI models with AWS SageMaker and Amazon S3, and presented the results."
         ],
         "case": "",
         "report": "",
@@ -240,7 +258,7 @@ export const locales = {
         "paperUrl": ""
       }
     ],
-    "projectIntro": "Built alone outside working hours with Claude Code and Codex. I own design, code review, and verification, and built the agent harness—CLAUDE.md / AGENTS.md rules, Skills, MCP, design docs, and tests—so agents implement changes autonomously.",
+    "projectIntro": "Built alone outside working hours with Claude Code and Codex. I own design, code review, and verification, and built the agent harness workflow—CLAUDE.md / AGENTS.md rules, Skills, MCP, design docs, and tests—so agents implement changes autonomously.",
     "projects": [
       {
         "name": "Ramune Photo",
@@ -254,19 +272,19 @@ export const locales = {
         "url": "https://www.hakonote.com/en",
         "domain": "hakonote.com",
         "description": "Listing assistant for Japanese flea-market sellers: product-photo analysis, listing copy generation, and inventory management across platforms.",
-        "tech": "Multimodal LLM · RAG · Structured output · Chrome extension (MV3) · Cloudflare Workers / D1 / Vectorize"
+        "tech": "Multimodal LLM · RAG · Structured output · Chrome extension · Cloudflare Workers / D1"
       },
       {
         "name": "MaxPaku",
         "url": "https://maxpaku.com/en",
         "domain": "maxpaku.com",
-        "description": "Compare about 95,000 short-term rental listings and municipal regulations across Japan on maps and charts (data as of May 2026).",
+        "description": "Compare about 95,000 short-term rental listings and municipal regulations across Japan on maps and charts.",
         "tech": "Python data pipelines · MapLibre GL · PMTiles · ECharts · Next.js"
       }
     ],
-    "publicationIntro": "8 publications, 3 as first author: 5 papers in peer-reviewed journals of the Japan Society of Civil Engineers (JSCE) and 3 international conference papers. Research in bridge inspection, road-marking assessment, segmentation, and 3D reconstruction.",
+    "publicationIntro": "9 publications: 1 in an international journal (Measurement, Elsevier), 5 in peer-reviewed journals of the Japan Society of Civil Engineers (JSCE), and 3 international conference papers. Research in UAV bridge inspection, road-marking assessment, segmentation, and 3D reconstruction.",
     "firstAuthor": "",
-    "morePublications": "5 co-authored papers",
+    "morePublications": "5 more co-authored papers",
     "lessPublications": "Hide co-authored papers",
     "online": "first online",
     "scholar": "Full profile on Google Scholar",
@@ -275,23 +293,23 @@ export const locales = {
         "degree": "Master of Engineering · Civil and Environmental Engineering",
         "school": "Saitama University, Graduate School of Science and Engineering",
         "date": "Apr 2022 — Mar 2024",
-        "description": "GPA 3.71 / 4.0. International program taught mainly in English. Research in 3D point clouds, photogrammetry, and infrastructure inspection. Completed the graduate school’s data-scientist training program."
+        "description": "GPA 3.71 / 4.0. International program taught mainly in English. Research in UAV photogrammetry, 3D point clouds, and AI-based infrastructure inspection. Completed the graduate school’s data-scientist training program."
       },
       {
         "degree": "Bachelor of Engineering · Civil and Environmental Engineering",
         "school": "Saitama University, Faculty of Engineering",
         "date": "Apr 2018 — Mar 2022",
-        "description": "Undergraduate thesis: semantic segmentation of bridge corrosion damage using DeepLabv3+."
+        "description": "Undergraduate thesis: detecting bridge corrosion damage with DeepLabv3+ on images collected by UAV."
       }
     ],
     "skills": [
       [
         "Computer vision",
-        "PyTorch · Semantic segmentation · Object detection · DeepLabv3+ · U-Net++ · YOLO"
+        "PyTorch · Semantic segmentation · Object detection · Multimodal AI · Time-series data processing"
       ],
       [
         "3D & spatial data",
-        "UAV photogrammetry · SfM · Point clouds · RANSAC · DBSCAN · GIS"
+        "UAV photogrammetry · SfM · Point clouds · GIS"
       ],
       [
         "Web & AI products",
@@ -303,7 +321,7 @@ export const locales = {
       ],
       [
         "Agentic development",
-        "Claude Code · Codex · Skills · MCP · CLAUDE.md / AGENTS.md · Automated tests · Workflow harness design"
+        "Claude Code · Codex · Skills · MCP · RAG · AGENTS.md · Automated tests · Workflow harness design"
       ]
     ],
     "credentials": [
@@ -351,7 +369,7 @@ export const locales = {
         "Business conversational (TOEIC L&R 790, 2023)"
       ]
     ],
-    "footer": "AI development & independent web products",
+    "footer": "AI model & web app development",
     "lastUpdated": "Updated October 2026",
     "profileLinks": [
       {
@@ -373,6 +391,25 @@ export const locales = {
     ],
     "publications": [
       {
+        "title": "Recover-then-measure: Hybrid segmentation and adaptive binarization for quantitative assessment of parking lot pavement marking degradation from UAV imagery",
+        "authors": [
+          "Zhentao Liu",
+          "Jiaming Liu",
+          "Zhengtao Xie",
+          "Kai Xue",
+          "Shan Gu",
+          "Ji Dang"
+        ],
+        "venue": "Measurement (Elsevier), 123332",
+        "year": "2026",
+        "doi": "10.1016/j.measurement.2026.123332",
+        "url": "https://doi.org/10.1016/j.measurement.2026.123332",
+        "first": false,
+        "topic": "Quantifies per-region paint loss on parking-lot markings from UAV orthophotos: semantic segmentation recovers the original marking, including worn segments, and adaptive binarization isolates the remaining paint.",
+        "onlineYear": "",
+        "featured": true
+      },
+      {
         "title": "Estimation of stripping ratio of road lane markings by in-vehicle smartphone camera and deep learning-based segmentation",
         "authors": [
           "Jiaming Liu",
@@ -385,7 +422,7 @@ export const locales = {
         "doi": "10.11532/jsceiiai.5.2_106",
         "url": "https://doi.org/10.11532/jsceiiai.5.2_106",
         "first": true,
-        "topic": "Smartphone video and two-stage segmentation for estimating the stripping ratio of lane markings. Lane IoU 88.43%; R² 0.9827 against manual assessment.",
+        "topic": "Smartphone video and two-stage AI segmentation for estimating the stripping ratio of lane markings. Lane IoU 88.43%; R² 0.9827 against manual assessment.",
         "onlineYear": ""
       },
       {
@@ -527,17 +564,17 @@ export const locales = {
     "name": "Jiaming Liu",
     "htmlLang": "ja",
     "title": "Jiaming Liu — 職務経歴書",
-    "description": "東京の AI エンジニア、Jiaming Liu の職務経歴書。コンピュータビジョンを中心とした AI モデル開発、社内ツール、Web サービスの個人開発、AI-native 開発・Harness Engineering。",
+    "description": "AIエンジニア、Jiaming Liuの職務経歴書。コンピュータビジョンを中心としたAIモデル開発、社内ツール開発、Webサービスの個人開発、AI-native開発・Harness Engineering。",
     "résumé": "職務経歴書",
     "skip": "本文へ移動",
     "languageLabel": "表示言語",
-    "print": "印刷・PDF 保存",
+    "print": "印刷・PDF保存",
     "profileLabel": "プロフィールリンク",
     "navLabel": "職務経歴書の項目",
-    "eyebrow": "コンピュータビジョン · AI エンジニアリング",
-    "role": "AI エンジニア",
-    "location": "東京都",
-    "intro": "AI モデルの開発から Web サービスの実装・運用までを一貫して手がけています。コーディングエージェントが自律的に作業できる開発環境づくり（Harness Engineering）を実践しています。",
+    "eyebrow": "コンピュータビジョン · AIエンジニアリング",
+    "role": "AIエンジニア",
+    "location": "",
+    "intro": "AIモデルの開発からWebサービスの実装・運用までを一貫して手がけています。コーディングエージェントが自律的に作業できる開発環境づくり（Harness Engineering）を実践しています。",
     "sections": {
       "experience": "職務経歴",
       "projects": "個人開発プロダクト",
@@ -551,12 +588,11 @@ export const locales = {
         "organization": "株式会社スマートシティ技術研究所",
         "url": "https://www.smc-tech.com/",
         "date": "2024年4月〜現在",
-        "role": "AI エンジニア（正社員）",
+        "role": "AIエンジニア（正社員）",
         "bullets": [
-          "【代表実績】車載スマートフォン映像から区画線を検出し、剥離率（かすれ度合い）を定量化するアルゴリズムを開発。名古屋市の実証事業で活用され、公式報告ではかすれ度合いの把握精度90%以上と報告。",
-          "同手法を筆頭著者として査読付き論文誌に発表（区画線 IoU 88.43%、人手評価との決定係数 R² 0.9827）。",
+          "【代表実績】車載スマートフォン映像から区画線を検出し、剥離率を定量化するアルゴリズムを開発。名古屋市の実証事業で活用（公式報告：かすれ度合いの把握精度90%以上）。",
           "関連技術の特許を出願中（主発明者）。",
-          "コンピュータビジョンを中心に、数十の AI モデルの開発、推論結果の後処理、運用保守を担当。",
+          "コンピュータビジョンを中心に、数十のAIモデルについて、ビッグデータの処理・データアノテーションから開発、推論結果の後処理、運用保守までを担当。",
           "データアノテーションツール、工期・人事管理ツールなど、社内ツールを多数開発。",
           "少人数のスタートアップで、日本語・英語・中国語を使い分けながら多国籍のメンバーと協働。"
         ],
@@ -572,7 +608,7 @@ export const locales = {
         "date": "2021年11月〜2023年11月",
         "role": "留学生チューター・TA・研究補助",
         "bullets": [
-          "留学生の生活支援と、AutoCAD・Microsoft Office の指導を担当。",
+          "留学生の生活支援と、AutoCAD・Microsoft Officeの指導を担当。",
           "データのアノテーションと土木分野の研究補助を担当。"
         ],
         "case": "",
@@ -585,9 +621,9 @@ export const locales = {
         "organization": "八千代エンジニヤリング株式会社",
         "url": "",
         "date": "2022年8月",
-        "role": "夏季インターンシップ（2週間）",
+        "role": "夏季インターンシップ",
         "bullets": [
-          "AWS・Amazon S3 を用いた AI モデルの学習に取り組み、成果を発表。"
+          "AWS SageMaker・Amazon S3を用いたAIモデルの学習に取り組み、成果を発表。"
         ],
         "case": "",
         "report": "",
@@ -610,7 +646,7 @@ export const locales = {
         "paperUrl": ""
       }
     ],
-    "projectIntro": "業務時間外に、Claude Code・Codex を活用して一人で設計・開発・運用している Web サービス。設計・レビュー・検証は自身で担当し、作業ルール（CLAUDE.md・AGENTS.md）、Skills、MCP 連携、設計ドキュメント、自動テストを組み合わせて、エージェントが自律的に実装できる開発フロー（ハーネス）を構築。",
+    "projectIntro": "業務時間外に、Claude Code／Codexを活用して一人で設計・開発・運用しているWebサービス。設計・レビュー・検証は自身で担当し、作業ルール（CLAUDE.md・AGENTS.md）、Skills、MCP連携、設計ドキュメント、自動テストを組み合わせて、エージェントが自律的に実装できるハーネスワークフローを構築。",
     "projects": [
       {
         "name": "Ramune AI 証明写真",
@@ -623,57 +659,57 @@ export const locales = {
         "name": "hakonote",
         "url": "https://www.hakonote.com/",
         "domain": "hakonote.com",
-        "description": "商品写真の AI 解析、出品文の生成、複数フリマアプリの在庫管理を支援する出品者向けサービス。",
-        "tech": "マルチモーダル LLM・RAG・構造化出力／Chrome 拡張（MV3）／Cloudflare Workers・D1・Vectorize"
+        "description": "商品写真のAI解析、出品文の生成、複数フリマアプリの在庫管理を支援する出品者向けサービス。",
+        "tech": "マルチモーダルLLM・RAG・構造化出力／Chrome拡張／Cloudflare Workers・D1"
       },
       {
         "name": "MaxPaku",
         "url": "https://maxpaku.com/",
         "domain": "maxpaku.com",
-        "description": "全国約9.5万件（2026年5月時点）の民泊データと自治体ごとの規制を、地図と統計で比較できるプラットフォーム。",
-        "tech": "Python データ収集パイプライン／MapLibre GL・PMTiles／ECharts／Next.js"
+        "description": "全国約9.5万件の民泊データと自治体ごとの規制を、地図と統計で比較できるプラットフォーム。",
+        "tech": "Pythonデータ収集パイプライン／MapLibre GL・PMTiles／ECharts／Next.js"
       }
     ],
-    "publicationIntro": "論文8件（うち筆頭著者3件）：土木学会の査読付き論文誌5件、国際会議論文3件。橋梁点検、区画線の劣化評価、セグメンテーション、三次元再構成に関する研究。",
+    "publicationIntro": "論文9件：国際学術誌1件（Measurement、Elsevier）、土木学会の査読付き論文誌5件、国際会議論文3件。UAV橋梁点検、区画線の劣化評価、セグメンテーション、三次元再構成に関する研究。",
     "firstAuthor": "",
-    "morePublications": "共著論文 5件",
+    "morePublications": "その他の共著論文5件",
     "lessPublications": "共著論文を閉じる",
     "online": "初回オンライン公開",
-    "scholar": "Google Scholar で全プロフィールを見る",
+    "scholar": "Google Scholarで全プロフィールを見る",
     "education": [
       {
         "degree": "環境社会基盤専攻 環境社会基盤国際プログラム（博士前期課程）修了・修士（工学）",
         "school": "埼玉大学大学院 理工学研究科",
         "date": "2022年4月〜2024年3月",
-        "description": "GPA 3.71 / 4.0。講義・研究指導を主に英語で行う国際プログラム。三次元点群、写真測量、インフラ点検を研究。「データサイエンティストとしての素養を備えた理工系人材育成プログラム」修了。"
+        "description": "GPA 3.71 / 4.0。講義・研究指導を主に英語で行う国際プログラム。UAV写真測量、三次元点群、AIインフラ点検を研究。「データサイエンティストとしての素養を備えた理工系人材育成プログラム」修了。"
       },
       {
         "degree": "環境社会デザイン学科 卒業・学士（工学）",
         "school": "埼玉大学 工学部",
         "date": "2018年4月〜2022年3月",
-        "description": "卒業研究：DeepLabv3+ を用いた橋梁腐食損傷のセマンティックセグメンテーション。"
+        "description": "卒業研究：UAVで収集した画像から、DeepLabv3+を用いて橋梁の腐食損傷を検出。"
       }
     ],
     "skills": [
       [
         "コンピュータビジョン",
-        "PyTorch・セマンティックセグメンテーション・物体検出・DeepLabv3+・U-Net++・YOLO"
+        "PyTorch・セマンティックセグメンテーション・物体検出・マルチモーダルAI・時系列データ処理"
       ],
       [
         "三次元・空間データ",
-        "UAV 写真測量・SfM・点群処理・RANSAC・DBSCAN・GIS"
+        "UAV写真測量・SfM・点群処理・GIS"
       ],
       [
-        "Web・AI プロダクト",
-        "Python・TypeScript・React・Next.js・Hono・マルチモーダル LLM・RAG"
+        "Web・AIプロダクト",
+        "Python・TypeScript・React・Next.js・Hono・マルチモーダルLLM・RAG"
       ],
       [
         "インフラ・運用",
         "Cloudflare Workers・D1・R2・Queues・Vercel・RunPod・Stripe"
       ],
       [
-        "AI 駆動開発",
-        "Claude Code・Codex・Skills・MCP・CLAUDE.md・AGENTS.md・自動テスト・開発フローのハーネス設計"
+        "AI駆動開発",
+        "Claude Code・Codex・Skills・MCP・RAG・AGENTS.md・自動テスト・開発フローのハーネス設計"
       ]
     ],
     "credentials": [
@@ -693,7 +729,7 @@ export const locales = {
         "2025年1月"
       ],
       [
-        "Machine Learning in Production（修了）",
+        "Machine Learning in Production 修了",
         "DeepLearning.AI",
         "2024年10月"
       ]
@@ -714,14 +750,14 @@ export const locales = {
       ],
       [
         "日本語",
-        "ビジネスレベル・業務で日常的に使用（日本語能力試験 N1 合格・2019年）"
+        "ビジネスレベル・業務で日常的に使用（日本語能力試験N1合格・2019年）"
       ],
       [
         "英語",
         "ビジネス会話レベル（TOEIC L&R 790点・2023年）"
       ]
     ],
-    "footer": "AI モデル開発・Web サービス開発",
+    "footer": "AIモデル開発・Webアプリ開発",
     "lastUpdated": "2026年10月更新",
     "profileLinks": [
       {
@@ -743,6 +779,25 @@ export const locales = {
     ],
     "publications": [
       {
+        "title": "Recover-then-measure: Hybrid segmentation and adaptive binarization for quantitative assessment of parking lot pavement marking degradation from UAV imagery",
+        "authors": [
+          "Zhentao Liu",
+          "Jiaming Liu",
+          "Zhengtao Xie",
+          "Kai Xue",
+          "Shan Gu",
+          "Ji Dang"
+        ],
+        "venue": "Measurement（Elsevier）, 123332",
+        "year": "2026",
+        "doi": "10.1016/j.measurement.2026.123332",
+        "url": "https://doi.org/10.1016/j.measurement.2026.123332",
+        "first": false,
+        "topic": "UAVオルソ画像から、駐車場区画線の剥離率を領域ごとに算出。セマンティックセグメンテーションで摩耗部分を含む元の区画線領域を復元し、適応的二値化で残存塗料を抽出。",
+        "onlineYear": "",
+        "featured": true
+      },
+      {
         "title": "Estimation of stripping ratio of road lane markings by in-vehicle smartphone camera and deep learning-based segmentation",
         "authors": [
           "Jiaming Liu",
@@ -755,7 +810,7 @@ export const locales = {
         "doi": "10.11532/jsceiiai.5.2_106",
         "url": "https://doi.org/10.11532/jsceiiai.5.2_106",
         "first": true,
-        "topic": "車載スマートフォン映像と2段階のセグメンテーションにより区画線の剥離率を推定。区画線 IoU 88.43%、人手評価との決定係数 R² 0.9827。",
+        "topic": "車載スマートフォン映像と2段階のAIセグメンテーションにより区画線の剥離率を推定。区画線IoU 88.43%、人手評価との決定係数R² 0.9827。",
         "onlineYear": ""
       },
       {
@@ -771,7 +826,7 @@ export const locales = {
         "doi": "10.11532/jsceiiai.5.1_104",
         "url": "https://doi.org/10.11532/jsceiiai.5.1_104",
         "first": true,
-        "topic": "UAV 写真測量で生成した三次元点群から、RANSAC・DBSCAN により駐車場舗装の損傷を自動抽出（論文の評価で精度90%）。",
+        "topic": "UAV写真測量で生成した三次元点群から、RANSAC・DBSCANにより駐車場舗装の損傷を自動抽出（論文の評価で精度90%）。",
         "onlineYear": ""
       },
       {
@@ -897,7 +952,7 @@ export const locales = {
     "name": "Jiaming Liu",
     "htmlLang": "zh-CN",
     "title": "Jiaming Liu — 个人简历",
-    "description": "Jiaming Liu 的个人简历。东京的 AI 工程师，从事以计算机视觉为主的 AI 模型、内部工具与 Web 产品开发，实践 AI-native 开发与 Harness Engineering。",
+    "description": "Jiaming Liu 的个人简历。AI 工程师，从事以计算机视觉为主的 AI 模型、内部工具与 Web 产品开发，实践 AI-native 开发与 Harness Engineering。",
     "résumé": "个人简历",
     "skip": "跳转至正文",
     "languageLabel": "网站语言",
@@ -906,7 +961,7 @@ export const locales = {
     "navLabel": "简历目录",
     "eyebrow": "计算机视觉 · AI 工程",
     "role": "AI 工程师",
-    "location": "日本东京",
+    "location": "",
     "intro": "我开发 AI 模型，也独立完成 Web 服务从设计到运营的全过程；实践 Harness Engineering，为编程智能体搭建可自主工作的开发环境。",
     "sections": {
       "experience": "工作经历",
@@ -921,12 +976,11 @@ export const locales = {
         "organization": "SmartCity Research Institute",
         "url": "https://www.smc-tech.com/en/",
         "date": "2024.04 — 至今",
-        "role": "AI 工程师 · 东京",
+        "role": "AI 工程师（正式员工）",
         "bullets": [
-          "【代表成果】开发从车载手机视频中识别车线并量化剥离率（磨损程度）的算法。该算法应用于名古屋市的实证项目，官方报告称磨损程度的识别精度达到 90% 以上。",
-          "以第一作者将该方法发表于同行评审期刊（车线 IoU 88.43%，与人工评价的 R² 为 0.9827）。",
+          "【代表成果】开发从车载手机视频中识别车线并量化剥离率的算法。该算法应用于名古屋市的实证项目，官方报告称磨损程度的识别精度达到 90% 以上。",
           "以第一贡献人身份申请相关专利（申请中）。",
-          "以计算机视觉为主，负责数十个 AI 模型的开发、推理结果后处理与长期维护。",
+          "以计算机视觉为主，负责大数据处理，以及数十个 AI 模型的数据标注、开发、推理结果后处理与长期维护。",
           "开发数据标注工具、工期人事管理工具等多种公司内部工具。",
           "在小团队、快节奏的初创公司中，以中日英三语与多国籍同事协作。"
         ],
@@ -955,9 +1009,9 @@ export const locales = {
         "organization": "八千代エンジニヤリング株式会社",
         "url": "",
         "date": "2022.08",
-        "role": "暑期实习 · 两周",
+        "role": "暑期实习",
         "bullets": [
-          "使用 AWS 与 Amazon S3 进行 AI 模型训练，并汇报项目成果。"
+          "使用 AWS SageMaker 与 Amazon S3 进行 AI 模型训练，并汇报项目成果。"
         ],
         "case": "",
         "report": "",
@@ -980,7 +1034,7 @@ export const locales = {
         "paperUrl": ""
       }
     ],
-    "projectIntro": "在业余时间借助 Claude Code、Codex 独立设计、开发并运营的 Web 服务。设计、代码审查与验证由我负责；结合 CLAUDE.md / AGENTS.md 规则、Skills、MCP、设计文档与自动化测试搭建开发流程（Harness），让智能体能够自主实现修改。",
+    "projectIntro": "在业余时间借助 Claude Code、Codex 独立设计、开发并运营的 Web 服务。设计、代码审查与验证由我负责；结合 CLAUDE.md / AGENTS.md 规则、Skills、MCP、设计文档与自动化测试搭建 Harness 工作流，让智能体能够自主实现修改。",
     "projects": [
       {
         "name": "Ramune Photo",
@@ -994,19 +1048,19 @@ export const locales = {
         "url": "https://www.hakonote.com/en",
         "domain": "hakonote.com",
         "description": "面向日本二手交易平台卖家，提供商品图片 AI 分析、上架文案生成与跨平台库存管理。",
-        "tech": "多模态 LLM · RAG · 结构化输出 · Chrome 扩展（MV3）· Cloudflare Workers / D1 / Vectorize"
+        "tech": "多模态 LLM · RAG · 结构化输出 · Chrome 扩展 · Cloudflare Workers / D1"
       },
       {
         "name": "MaxPaku",
         "url": "https://maxpaku.com/en",
         "domain": "maxpaku.com",
-        "description": "在地图和图表上比较日本全国约 9.5 万条民宿数据与各自治体规定的平台（数据截至 2026 年 5 月）。",
+        "description": "在地图和图表上比较日本全国约 9.5 万条民宿数据与各自治体规定的平台。",
         "tech": "Python 数据采集管线 · MapLibre GL · PMTiles · ECharts · Next.js"
       }
     ],
-    "publicationIntro": "共 8 篇论文，其中 3 篇为第一作者：土木学会同行评审期刊论文 5 篇、国际会议论文 3 篇。研究涉及桥梁巡检、道路标线评价、语义分割与三维重建。",
+    "publicationIntro": "共 9 篇论文：国际期刊论文 1 篇（Measurement，Elsevier）、土木学会同行评审期刊论文 5 篇、国际会议论文 3 篇。研究涉及 UAV 桥梁巡检、道路标线评价、语义分割与三维重建。",
     "firstAuthor": "",
-    "morePublications": "合作论文（5 篇）",
+    "morePublications": "其他合作论文（5 篇）",
     "lessPublications": "收起合作论文",
     "online": "首次在线公开",
     "scholar": "查看 Google Scholar 完整主页",
@@ -1015,23 +1069,23 @@ export const locales = {
         "degree": "工学硕士 · 土木与环境工程（环境社会基盘国际项目）",
         "school": "埼玉大学 大学院理工学研究科",
         "date": "2022.04 — 2024.03",
-        "description": "GPA 3.71 / 4.0。以英语授课为主的国际项目。研究三维点云、摄影测量与基础设施巡检。修完研究科的数据科学家培养特别教育项目。"
+        "description": "GPA 3.71 / 4.0。以英语授课为主的国际项目。研究 UAV 摄影测量、三维点云与 AI 基础设施巡检。修完研究科的数据科学家培养特别教育项目。"
       },
       {
         "degree": "工学学士 · 土木与环境工程（环境社会设计学科）",
         "school": "埼玉大学 工学部",
         "date": "2018.04 — 2022.03",
-        "description": "本科毕业研究：使用 DeepLabv3+ 进行桥梁腐蚀损伤语义分割。"
+        "description": "本科毕业研究：使用 UAV 采集图像，并用基于 DeepLabv3+ 的 AI 检测桥梁腐蚀损伤。"
       }
     ],
     "skills": [
       [
         "计算机视觉",
-        "PyTorch · 语义分割 · 目标检测 · DeepLabv3+ · U-Net++ · YOLO"
+        "PyTorch · 语义分割 · 目标检测 · 多模态 AI · 时序数据处理"
       ],
       [
         "三维与空间数据",
-        "UAV 摄影测量 · SfM · 点云 · RANSAC · DBSCAN · GIS"
+        "UAV 摄影测量 · SfM · 点云 · GIS"
       ],
       [
         "Web 与 AI 产品",
@@ -1043,7 +1097,7 @@ export const locales = {
       ],
       [
         "AI 驱动开发",
-        "Claude Code · Codex · Skills · MCP · CLAUDE.md / AGENTS.md · 自动化测试 · 开发流程 Harness 设计"
+        "Claude Code · Codex · Skills · MCP · RAG · AGENTS.md · 自动化测试 · 开发流程 Harness 设计"
       ]
     ],
     "credentials": [
@@ -1091,7 +1145,7 @@ export const locales = {
         "商务会话（TOEIC L&R 790 · 2023）"
       ]
     ],
-    "footer": "AI 开发与 Web 产品独立开发",
+    "footer": "AI 模型开发 · Web 应用开发",
     "lastUpdated": "更新于 2026 年 10 月",
     "profileLinks": [
       {
@@ -1113,6 +1167,25 @@ export const locales = {
     ],
     "publications": [
       {
+        "title": "Recover-then-measure: Hybrid segmentation and adaptive binarization for quantitative assessment of parking lot pavement marking degradation from UAV imagery",
+        "authors": [
+          "Zhentao Liu",
+          "Jiaming Liu",
+          "Zhengtao Xie",
+          "Kai Xue",
+          "Shan Gu",
+          "Ji Dang"
+        ],
+        "venue": "Measurement（Elsevier）, 123332",
+        "year": "2026",
+        "doi": "10.1016/j.measurement.2026.123332",
+        "url": "https://doi.org/10.1016/j.measurement.2026.123332",
+        "first": false,
+        "topic": "从 UAV 正射影像按区域量化停车场标线的剥离率：先用语义分割恢复包括磨损部分在内的原始标线区域，再用自适应二值化提取残留涂料。",
+        "onlineYear": "",
+        "featured": true
+      },
+      {
         "title": "Estimation of stripping ratio of road lane markings by in-vehicle smartphone camera and deep learning-based segmentation",
         "authors": [
           "Jiaming Liu",
@@ -1125,7 +1198,7 @@ export const locales = {
         "doi": "10.11532/jsceiiai.5.2_106",
         "url": "https://doi.org/10.11532/jsceiiai.5.2_106",
         "first": true,
-        "topic": "基于车载手机视频与两阶段分割估计车线剥离率。车线 IoU 88.43%，与人工评价的 R² 为 0.9827。",
+        "topic": "基于车载手机视频与两阶段 AI 分割估计车线剥离率。车线 IoU 88.43%，与人工评价的 R² 为 0.9827。",
         "onlineYear": ""
       },
       {

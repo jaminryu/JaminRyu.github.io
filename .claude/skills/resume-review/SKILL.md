@@ -1,71 +1,71 @@
 ---
 name: resume-review
-description: 从日本求职（転職）视角审阅简历质量：内容与侧重点、日英中三语的语言质量、专业性、UI 与打印。用户要求“检查”“审阅”“评价”简历，或准备投递日本企业时使用。只给意见；改动经用户同意后再修改草稿。
+description: Review the résumé as a candidate job hunting in Japan would need it reviewed - content and focus, Japanese/English/Chinese language quality, professionalism, UI and print. Use when the owner asks to check, review, or evaluate the résumé, or before applying to Japanese companies. Gives advice only; change the draft only after the owner agrees.
 ---
 
-# 审阅简历（日本求职视角）
+# Review the résumé for job hunting in Japan
 
-日文版最重要。审阅对象是最新保存的草稿（`local-editor/data/resume.json`），并同时看线上版本 <https://jaminryu.github.io/?lang=ja> 是否已同步。
+The Japanese version matters most. Review the latest saved draft (`local-editor/data/resume.json`) and check whether the live site <https://jaminryu.github.io/?lang=ja> matches it. Reply to the owner in their language (Chinese).
 
-## 1. 准备
+## 1. Prepare
 
-- 读取三种语言的草稿，以及 `PROFILE_RESEARCH.md` 里的事实、待补充事项和本人的展示偏好。
-- 运行 `resume-layout-check`，拿到截图和 A4 页数。
-- 市场或写法可能已经变化时，先做网络调研，优先看 2024 年以后的日文资料，例如 doda、マイナビ、Findy、転職ドラフト、リクルートエージェント、Japan Dev。下面的检查点是 2026-10 的调研结论。
+- Read the draft in all three languages, plus the facts, open questions, and the owner's display preferences in `PROFILE_RESEARCH.md`.
+- Run `resume-layout-check` for screenshots and A4 page counts.
+- If hiring practice may have changed, research first, preferring Japanese sources from 2024 on (doda, マイナビ, Findy, 転職ドラフト, リクルートエージェント, Japan Dev). The checklist below reflects research done in October 2026.
 
-## 2. 检查点
+## 2. Checklist
 
-**内容与侧重点**
-- 最强的成果是否放在第一条、写成可验证的形式（有出处的数字、第三方报告、论文）。
-- 「数十件」「多数」这类模糊词能否换成具体数字、类别或例子。
-- 每段经历是否看得出：期间、角色、负责范围、使用技术、成果。転職ドラフト指出，约九成没通过的原因是「信息不足，无法客观判断实力」。
-- 个人开发要写技术深度，可以的话写用户或运营情况；用 AI 编程工具时，要写清本人负责设计和验证，避免被理解成全交给 AI（丸投げ）。
-- 新术语要有具体说明。在マイナビ転職搜「ハーネス」，结果几乎都是汽车线束（ワイヤーハーネス），非技术读者可能误读。
-- 联系方式、日语实际使用情况是否写明。在留资格、在日年数等个人信息是否展示以本人在 `PROFILE_RESEARCH.md` 里的偏好为准，不要主动建议加回。
+**Content and focus**
+- Is the strongest result first, and stated in a verifiable form (a sourced figure, a third-party report, a paper)?
+- Can vague words such as 「数十件」 or 「多数」 become numbers, categories, or examples?
+- Does each role show the period, role, scope, technologies, and results? 転職ドラフト reports that about 90% of rejected profiles fail because there is not enough information to judge the candidate's skill objectively.
+- Do the side projects show technical depth, and users or operations where possible? Where AI coding tools are used, state that the owner does the design and verification, so it does not read as handing everything to AI (丸投げ).
+- Do new terms come with a concrete explanation? Searching 「ハーネス」 on マイナビ転職 returns almost only automotive wire-harness jobs (ワイヤーハーネス), so non-technical readers may misread "harness".
+- Are contact details and real-world Japanese use stated? Whether to show residency status, years in Japan, or location follows the owner's preference in `PROFILE_RESEARCH.md`; do not suggest adding them back.
 
-**日文**
-- 要点用体言止め，介绍用です・ます調，不要混用。
-- 是否有翻译腔，例如学历写成「土木・環境工学」，应改用学校的正式名称。
-- 搭配是否自然，例如「貢献を担当」是错误搭配。
-- 资格是否写了正式名称、「合格」和年月。
-- 日文页面上是否混入简体字或中文专有名词。
-- 符号：用「・」「／」「〜」，不用西文的「·」「—」。
+**Japanese**
+- Bullet points in 体言止め and the introduction in です・ます調, without mixing.
+- Translation-like phrasing, e.g. a degree written as 「土木・環境工学」 instead of the school's official name.
+- Unnatural collocations, e.g. 「貢献を担当」, and duplicated words, e.g. 「報告では…と報告」.
+- Credentials by official name with 「合格」「取得」「修了」 and the year and month.
+- No Simplified Chinese characters or Chinese proper nouns on the Japanese page.
+- No spaces between Japanese and Latin text; 「・」「／」「〜」 rather than Western 「·」「—」.
 
-**英文 / 中文**
-- 英文：语义是否准确（例如 post-process 的对象是模型输出，不是模型）；动词是否重复；数字口径是否写明。
-- 中文：有没有自造的公司译名；有没有不必要的英文混用。
+**English and Chinese**
+- English: accurate meaning (post-processing applies to model outputs, not models), varied verbs, and figures with their basis.
+- Chinese: no invented company translations and no needless English.
 
-**专业性**
-- 专利：用词要和法律身份一致。职务发明的出願人通常是公司，「共同出願」指出願人有多个；未公开的申请不写内容。
-- 论文：区分期刊与会议、是否查读、筆頭与否；日文论文在日文版用日文题目。
-- 学历与资格的正式名称以学校官网和学位记为准，不要重复列同一项。
+**Professionalism**
+- Patents: wording must match the legal role. For an employee invention the company is usually the applicant (出願人); 「共同出願」 means several applicants. Do not describe unpublished applications.
+- Papers: distinguish journals from conferences, peer review, and first authorship; give Japanese papers their Japanese titles on the Japanese page.
+- Degrees and credentials follow the official names on the school's site and the diploma; list each item once.
 
 **UI**
-- A4 打印每种语言不超过 3 页（篇幅参考：2–3 页）。
-- 手机宽度下没有横向溢出。
-- 日文和中文分别使用合适的字体；Windows 上不要依赖 Yu Gothic。
-- 有联系入口；发给日本企业时用 `?lang=ja` 链接。
+- A4 print at three pages or fewer per language (two to three pages is the norm).
+- No horizontal overflow at phone width.
+- Suitable fonts for Japanese and Chinese; do not rely on Yu Gothic on Windows.
+- A contact link; send Japanese companies the `?lang=ja` link.
 
-## 3. 输出格式
+## 3. Output
 
-1. 总评，3–4 行。
-2. 调研要点，附来源链接。
-3. 按影响从大到小列出问题。
-4. 日文逐条修改：现在 → 建议。
-5. 英文与中文的修改。
-6. 专业性问题。
-7. UI 问题。
-8. 需要本人确认的事项。
+1. Overall verdict in three or four lines.
+2. Research findings with source links.
+3. Problems, most important first.
+4. Japanese line by line: current → suggested.
+5. English and Chinese changes.
+6. Professionalism issues.
+7. UI issues.
+8. Questions for the owner.
 
-审阅时发现的新事实（正式名称、出处等）记入 `PROFILE_RESEARCH.md`。不要直接修改草稿，等用户同意后再用编辑器或 `edit-draft.mjs` 修改。
+Record new facts found during the review (official names, sources) in `PROFILE_RESEARCH.md`. Do not edit the draft; after the owner agrees, change it with the editor or `edit-draft.mjs`.
 
-## 参考来源
+## Sources
 
-- doda 職務経歴書の書き方：<https://doda.jp/guide/syokureki/>
-- 転職ドラフト 审核标准：<https://job-draft.jp/articles/215>
-- マイナビ IT エンジニア職務経歴書：<https://tenshoku.mynavi.jp/knowhow/it-engineer/resume/index/>
-- Findy 職務経歴書：<https://findy-code.io/blog/engineer-carrer_syokumukeireki/>
-- Harness Engineering 的定义尚不统一（@IT）：<https://atmarkit.itmedia.co.jp/ait/articles/2606/01/news016.html>
-- 专利的发明者与出願人：<https://www.kjpaa.jp/qa/46395.html>
-- 国交省 点検支援技術：<https://www.mlit.go.jp/report/press/content/001883306.pdf>
-- 外籍工程师的職務経歴書（Japan Dev）：<https://japan-dev.com/blog/japanese-cv-shokumu-keirekisho>
+- doda, 職務経歴書の書き方: <https://doda.jp/guide/syokureki/>
+- 転職ドラフト screening criteria: <https://job-draft.jp/articles/215>
+- マイナビ, IT engineer 職務経歴書: <https://tenshoku.mynavi.jp/knowhow/it-engineer/resume/index/>
+- Findy, 職務経歴書: <https://findy-code.io/blog/engineer-carrer_syokumukeireki/>
+- @IT on the unsettled definition of harness engineering: <https://atmarkit.itmedia.co.jp/ait/articles/2606/01/news016.html>
+- Inventors and applicants in Japanese patents: <https://www.kjpaa.jp/qa/46395.html>
+- MLIT inspection-support technologies: <https://www.mlit.go.jp/report/press/content/001883306.pdf>
+- Japan Dev, 職務経歴書 for foreign engineers: <https://japan-dev.com/blog/japanese-cv-shokumu-keirekisho>

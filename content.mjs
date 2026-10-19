@@ -278,7 +278,7 @@ export const locales = {
         "name": "MaxPaku",
         "url": "https://maxpaku.com/en",
         "domain": "maxpaku.com",
-        "description": "Compare about 95,000 short-term rental listings and municipal regulations across Japan on maps and charts.",
+        "description": "Collects about 95,000 short-term rentals and municipal rules across Japan and compares them on maps and charts.",
         "tech": "Python data pipelines · MapLibre GL · PMTiles · ECharts · Next.js"
       }
     ],
@@ -681,7 +681,7 @@ export const locales = {
         "name": "MaxPaku",
         "url": "https://maxpaku.com/",
         "domain": "maxpaku.com",
-        "description": "全国約9.5万件の民泊データと自治体ごとの規制を、地図と統計で比較できるプラットフォーム。",
+        "description": "全国約9.5万件の民泊データと自治体ごとの規制を独自に収集し、地図と統計で比較できるプラットフォーム。",
         "tech": "Pythonデータ収集パイプライン／MapLibre GL・PMTiles／ECharts／Next.js"
       }
     ],
@@ -982,17 +982,17 @@ export const locales = {
     "name": "Jiaming Liu",
     "htmlLang": "zh-CN",
     "title": "Jiaming Liu — 个人简历",
-    "description": "Jiaming Liu 的个人简历。AI 工程师，从事以计算机视觉为主的 AI 模型、内部工具与 Web 产品开发，实践 AI-native 开发与 Harness Engineering。",
+    "description": "Jiaming Liu的个人简历。AI工程师，从事以计算机视觉为主的AI模型、内部工具与Web产品开发，实践AI-native开发与Harness Engineering。",
     "résumé": "个人简历",
     "skip": "跳转至正文",
     "languageLabel": "网站语言",
-    "print": "打印 / 保存 PDF",
+    "print": "打印 / 保存PDF",
     "profileLabel": "个人主页链接",
     "navLabel": "简历目录",
-    "eyebrow": "计算机视觉 · AI 工程",
-    "role": "AI 工程师",
+    "eyebrow": "计算机视觉 · AI工程",
+    "role": "AI工程师",
     "location": "",
-    "intro": "我开发 AI 模型，也独立完成 Web 服务从设计到运营的全过程；实践 Harness Engineering，为编程智能体搭建可自主工作的开发环境。",
+    "intro": "具备开发计算机视觉AI模型、独立完成Web服务从设计到运营全过程的能力；积极实践Harness Engineering，为智能体搭建可自主工作的开发环境。",
     "sections": {
       "experience": "工作经历",
       "projects": "独立开发产品",
@@ -1006,15 +1006,15 @@ export const locales = {
         "organization": "SmartCity Research Institute",
         "url": "https://www.smc-tech.com/en/",
         "date": "2024.04 — 至今",
-        "role": "AI 工程师（正式员工）",
+        "role": "AI工程师（正式员工）",
         "bullets": [
-          "【代表成果】开发从车载手机视频中识别车线并量化剥离率的算法。该算法应用于名古屋市的实证项目，官方报告称磨损程度的识别精度达到 90% 以上。",
+          "【代表成果】开发从车载手机视频中识别车道线、并量化其涂漆磨损程度的算法。该算法应用于名古屋市的实证项目，官方报告称磨损程度的识别精度达到90%以上。",
           "以第一贡献人身份申请相关专利（申请中）。",
-          "以计算机视觉为主，负责大数据处理，以及数十个 AI 模型的数据标注、开发、推理结果后处理与长期维护。",
+          "以计算机视觉为主，负责大数据处理，以及数十个AI模型的数据标注、开发、推理结果后处理与长期维护。",
           "开发数据标注工具、工期人事管理工具等多种公司内部工具。",
           "在小团队、快节奏的初创公司中，以中日英三语与多国籍同事协作。"
         ],
-        "case": "名古屋市「Hatch Technology NAGOYA 2024」实证中负责的算法：广角图像多车线标线检测、鸟瞰变换磨损测量，以及正常标线的检测与记录。",
+        "case": "名古屋市「Hatch Technology NAGOYA 2024」实证中负责研发算法：广角图像多车线标线检测、鸟瞰变换磨损测量，以及正常标线的检测与记录。",
         "report": "官方实证报告",
         "paper": "研究论文",
         "reportUrl": "https://www.hatch-tech-nagoya.jp/2024/news/post-4718/",
@@ -1026,8 +1026,8 @@ export const locales = {
         "date": "2021.11 — 2023.11",
         "role": "留学生辅导员 · 助教 · 兼职研究助理",
         "bullets": [
-          "协助国际学生适应日本生活，教授 AutoCAD 与 Microsoft Office。",
-          "参与数据标注与土木工程研究辅助工作。"
+          "协助国际学生适应日本生活，教授AutoCAD与Microsoft Office的使用。",
+          "参与数据标注与土木工程相关研究辅助工作。"
         ],
         "case": "",
         "report": "",
@@ -1041,7 +1041,7 @@ export const locales = {
         "date": "2022.08",
         "role": "暑期实习",
         "bullets": [
-          "使用 AWS SageMaker 与 Amazon S3 进行 AI 模型训练，并汇报项目成果。"
+          "使用AWS SageMaker与Amazon S3进行AI模型训练，并汇报项目成果。"
         ],
         "case": "",
         "report": "",
@@ -1064,7 +1064,7 @@ export const locales = {
         "paperUrl": ""
       }
     ],
-    "projectIntro": "独立开发并运营的 Web 服务。我搭建了基于 Claude Code、Codex 的 Harness 工作流，设计、代码审查与验证由我自己负责。",
+    "projectIntro": "独立开发并运营的Web服务。我搭建了基于Claude Code、Codex的Harness工作流，设计、代码审查与验证由我自己负责。",
     "projects": [
       {
         "name": "Ramune Photo",
@@ -1077,68 +1077,68 @@ export const locales = {
         "name": "hakonote",
         "url": "https://www.hakonote.com/en",
         "domain": "hakonote.com",
-        "description": "面向日本二手交易平台卖家，提供商品图片 AI 分析、上架文案生成与跨平台库存管理。",
-        "tech": "多模态 LLM · RAG · 结构化输出 · Chrome 扩展 · Cloudflare Workers / D1"
+        "description": "面向日本二手交易平台卖家，提供商品图片AI分析、上架文案生成与跨平台库存管理。",
+        "tech": "多模态LLM · RAG · 结构化输出 · Chrome扩展 · Cloudflare Workers / D1"
       },
       {
         "name": "MaxPaku",
         "url": "https://maxpaku.com/en",
         "domain": "maxpaku.com",
-        "description": "在地图和图表上比较日本全国约 9.5 万条民宿数据与各自治体规定的平台。",
-        "tech": "Python 数据采集管线 · MapLibre GL · PMTiles · ECharts · Next.js"
+        "description": "自行采集日本全国约9.5万条民宿数据与各自治体规定，并在地图和图表上进行比较的平台。",
+        "tech": "Python数据采集管线 · MapLibre GL · PMTiles · ECharts · Next.js"
       }
     ],
-    "publicationIntro": "研究涉及 UAV 桥梁巡检、道路标线评价、语义分割与三维重建。",
+    "publicationIntro": "研究涉及UAV桥梁巡检、道路标线评价、语义分割与三维重建。",
     "firstAuthor": "",
-    "morePublications": "其他合作论文（5 篇）",
+    "morePublications": "其他合作论文（5篇）",
     "lessPublications": "收起合作论文",
     "online": "首次在线公开",
-    "scholar": "查看 Google Scholar 完整主页",
+    "scholar": "查看Google Scholar完整主页",
     "education": [
       {
         "degree": "工学硕士 · 土木与环境工程（环境社会基盘国际项目）",
         "school": "埼玉大学 大学院理工学研究科",
         "date": "2022.04 — 2024.03",
-        "description": "GPA 3.71 / 4.0。以英语授课为主的国际项目。研究 UAV 摄影测量、三维点云与 AI 基础设施巡检。"
+        "description": "GPA 3.71 / 4.0。以英语授课为主的国际项目。研究UAV摄影测量、三维点云与AI基础设施巡检。"
       },
       {
         "degree": "工学学士 · 土木与环境工程（环境社会设计学科）",
         "school": "埼玉大学 工学部",
         "date": "2018.04 — 2022.03",
-        "description": "本科毕业研究：使用 UAV 采集图像，并用基于 DeepLabv3+ 的 AI 检测桥梁腐蚀损伤。"
+        "description": "本科毕业研究：使用UAV采集图像，并用基于DeepLabv3+的AI检测桥梁腐蚀损伤。"
       }
     ],
     "skills": [
       [
         "计算机视觉",
-        "PyTorch · 语义分割 · 目标检测 · 多模态 AI · 时序数据处理"
+        "PyTorch · 语义分割 · 目标检测 · 多模态AI · 时序数据处理"
       ],
       [
         "三维与空间数据",
-        "UAV 摄影测量 · SfM · 点云 · GIS"
+        "UAV摄影测量 · SfM · 点云 · GIS"
       ],
       [
-        "Web 与 AI 产品",
-        "Python · TypeScript · React · Next.js · Hono · 多模态 LLM · RAG"
+        "Web与AI产品",
+        "Python · TypeScript · React · Next.js · Hono · 多模态LLM · RAG"
       ],
       [
         "基础设施与运维",
         "Cloudflare Workers / D1 / R2 / Queues · Vercel · RunPod · Stripe"
       ],
       [
-        "AI 驱动开发",
-        "Claude Code · Codex · Skills · MCP · RAG · AGENTS.md · 自动化测试 · 开发流程 Harness 设计"
+        "AI驱动开发",
+        "Claude Code · Codex · Skills · MCP · RAG · AGENTS.md · 自动化测试 · 开发流程Harness设计"
       ]
     ],
     "credentials": [
       [
         "基本信息技术者考试 合格",
-        "日本 IPA",
+        "日本IPA",
         "2022.06"
       ],
       [
         "信息安全管理考试 合格",
-        "日本 IPA",
+        "日本IPA",
         "2023.12"
       ],
       [
@@ -1165,13 +1165,13 @@ export const locales = {
         "2024.02"
       ],
       [
-        "人群与网络 Networks and Crowds（课程）",
+        "人群与网络（Networks and Crowds，课程）",
         "Coursera",
         "2023.12"
       ],
       [
-        "IT Passport 考试 合格",
-        "日本 IPA",
+        "IT Passport考试合格",
+        "日本IPA",
         "2021.08"
       ]
     ],
@@ -1190,8 +1190,8 @@ export const locales = {
         "商务会话（TOEIC L&R 790 · 2023）"
       ]
     ],
-    "footer": "AI 模型开发 · Web 应用开发",
-    "lastUpdated": "更新于 2026 年 10 月",
+    "footer": "AI模型开发 · Web应用开发",
+    "lastUpdated": "更新于2026年10月",
     "profileLinks": [
       {
         "label": "liujiaming3823@gmail.com",
@@ -1224,7 +1224,7 @@ export const locales = {
         "doi": "10.11532/jsceiiai.5.2_106",
         "url": "https://doi.org/10.11532/jsceiiai.5.2_106",
         "first": true,
-        "topic": "基于车载手机视频与两阶段 AI 分割估计车线剥离率。车线 IoU 88.43%，与人工评价的 R² 为 0.9827。",
+        "topic": "基于车载手机视频与两阶段AI分割估计车线剥离率。车线IoU 88.43%，与人工评价的R²为0.9827。",
         "onlineYear": ""
       },
       {
@@ -1240,7 +1240,7 @@ export const locales = {
         "doi": "10.11532/jsceiiai.5.1_104",
         "url": "https://doi.org/10.11532/jsceiiai.5.1_104",
         "first": true,
-        "topic": "基于 UAV 摄影测量生成的三维点云，用 RANSAC 与 DBSCAN 自动提取停车场路面病害（论文评价中精度 90%）。",
+        "topic": "基于UAV摄影测量生成的三维点云，用RANSAC与DBSCAN自动提取停车场路面病害（论文评价中精度90%）。",
         "onlineYear": ""
       },
       {
@@ -1273,7 +1273,7 @@ export const locales = {
         "doi": "10.1016/j.measurement.2026.123332",
         "url": "https://doi.org/10.1016/j.measurement.2026.123332",
         "first": false,
-        "topic": "从 UAV 正射影像按区域量化停车场标线的剥离率：先用语义分割恢复包括磨损部分在内的原始标线区域，再用自适应二值化提取残留涂料。",
+        "topic": "从UAV正射影像按区域量化停车场标线的剥离率：先用语义分割恢复包括磨损部分在内的原始标线区域，再用自适应二值化提取残留涂料。",
         "onlineYear": "",
         "featured": true
       },
